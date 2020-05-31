@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>ART Fiesta - Login</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="icon" href="logo.png" type="image/x-icon">
+        <script src="home.js"></script>
+    </head>
+
+    <body>
+        <div class="hero">
+            <div class="form-box">
+
+                <div class="button-box">
+
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="signUp()">Sign Up</button>
+                
+                </div>
+
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" id="loginBtn" class="submit-btn" onclick="onClickLogin()">Log In</button>
+                </form>
+
+                <form id="signUp" class="input-group" action="index.html">
+                    <input type="text" class="input-field" id="userId" placeholder="User Id" required>
+                    <input type="email" class="input-field" id="emailId" placeholder="Email Id" required>
+                    <input type="text" class="input-field" id="pwd" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>I agree to terms and conditions</span>
+                    <button type="submit" id="signUpBtn" class="submit-btn" onclick="onClickSignUp()">Sign Up</button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <script>
+
+            var x = document.getElementById("login");
+            var y = document.getElementById("signUp");
+            var z = document.getElementById("btn"); 
+
+            var loginBtn= document.getElementById("loginBtn");
+            var signUpBtn= document.getElementById("signUpBtn");
+            
+            var userName = document.getElementById("userId");
+            var userEmail = document.getElementById("emailId");
+            var userPwd = document.getElementById("pwd");
+
+
+            function signUp() {
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+
+            function login() {
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+
+            function onClickLogin(){
+                alert("log in");
+            }
+
+            function onClickSignUp(){
+                localStorage.clear();
+                localStorage.setItem("User Id", userName.value);
+                localStorage.setItem("Email Id", userEmail.value);
+                localStorage.setItem("Password", userPwd.value);
+                loggedInView();
+                return false;
+            }
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ART Fiesta</title>
+		<link rel="icon" href="logo.png" type="image/x-icon">
+		<link rel="stylesheet" href="home.css">
+		<script src="home.js"></script>
+		
+		<!-- JQuery -->
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		
+		<script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+		<!-- font awesome library -->
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+
+		<div class="homeView">
+
+			<div class="row">
+				
+				<div class="logo">
+					<img src="images/logo.png">
+				</div>
+
+				<ul class="topnav">
+					<li class="active" ><button>Home</button></li>
+					<li><button onclick="gotoAbout()">About</button></li>
+					<li><button onclick="gotoGallery()">Gallery</button></li>
+					<li><button onclick="gotoContact()">Contact</button></li>
+				</ul>
+				
+				<!-- <div class="login" id="beforeLogin">
+					<img src="userIcon.png">
+					<button type="button" class="loginBtn" onclick="login()">Log In</button>
+				</div>
+
+				<div class="logout" id="afterLogin">
+	
+				</div> -->
+
+			</div>
+
+			<div class="blogTitle">
+				<h1>ART FIESTA</h1>
+			</div>
+
+			<div id="slider">
+				<figure>
+					<img src="images/PUBG_new.jpg">
+					<img src="images/sketch_resized.jpg">
+					<img src="images/cube_resized.jpg">
+					<img src="images/cook_resized.jpg">
+					<img src="images/PUBG_new.jpg">
+				</figure>
+			</div>
+		
+			<div class="intro">
+				<span class="header"> ART FIESTA Welcomes You</span>
+				<i class="vision">- We love creativity</i>
+				<div class="msg">
+					If you have a fire inside you which urges you to create something which has never been made before or to innovate something for the betterment of the world, then let me tell you, you are at the right place!!
+					<br>
+					Your journey towards innovation and creativity begins here...
+				</div>
+			</div>
+		
+		</div>
+
+		<div class="gallery">
+
+			<span class="header">Gallery</span>
+			<div class="cardCntr">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img class="card-front-img" src="images/pubg_card.jpg" alt="Avatar">
+						</div>
+						<div class="flip-card-back">
+							<h1>SKETCHING</h1>
+							<p>Coming soon... <br>Stay tuned for exciting content!</p>
+							<button>LEARN MORE</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img class="card-front-img" src="images/pubg_card3.jpg" alt="Avatar">
+					</div>
+					<div class="flip-card-back">
+						<h1>COOKING</h1>
+						<p>Coming soon... <br>Stay tuned for exciting content!</p>
+						<button onClick="window.location.href = 'https://www.youtube.com/channel/UCavaRev57sFjuxGH0eSDb3A'">LEARN MORE</button>
+					</div>
+					</div>
+				</div>
+
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img class="card-front-img" src="images/pubg_card4.jpg" alt="Avatar">
+					</div>
+					<div class="flip-card-back">
+						<h1>GAMING</h1>
+						<p>Coming soon... <br>Stay tuned for exciting content!</p>
+						<button onClick="window.location.href = 'https://www.youtube.com/channel/UCz4AG31wlf8gDvBbFnAdwyA'">LEARN MORE</button>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="rubiks">
+			<div class="header"><span>CUBE SOLVING</span></div>
+			<div class="text">“If you are curious, you'll find the puzzles around you. If you are determined, you will solve them.”
+				<br>
+				-- Erno Rubik
+			</div>
+			<button class="getStarted" onClick="window.location.href = 'https://www.youtube.com/channel/UCzD2Gz6O1ivxKOzyCjL-TXA'">Get Started</button>
+		</div>
+
+		<div class="footer">
+			<div class="footer-content">
+				<div class="footer-section about">
+					<h1 class="logo-text">ART FIESTA</h1>
+					<p>Art Fiesta is a blog which gives you an opportunity to incorporate innovation and creativity in your life. It will motivate you each day to go an extra mile and push your limits to reach excellency. </p>
+					<div class="contact">
+						<span><i class="fa fa-phone"></i> &nbsp; 8250967250</span>
+						<span><i class="fa fa-envelope"></i> &nbsp; yashpatwari.jgm@gmail.com</span>
+					</div>
+					<div class="socials">
+						<a href="https://www.facebook.com/yash.patwari.96"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.instagram.com/patwari_y/"><i class="fa fa-instagram"></i></a>
+						<a href="https://twitter.com/YashPatwari3?s=03"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.youtube.com/channel/UCz4AG31wlf8gDvBbFnAdwyA"><i class="fa fa-youtube"></i></a>
+					</div>
+				</div>
+
+				<div class="footer-section links">
+					<h2>Quick Links</h2>
+					<br>
+					<ul>
+						<a onclick="gotoHome()">
+							<li>Home</li>
+						</a>
+						<a onclick="gotoAbout()">
+							<li>About</li>
+						</a>
+						<a onclick="gotoGallery()">
+							<li>Gallery</li>
+						</a>
+					</ul>
+				</div>
+
+				<div class="footer-section contact-form">
+					<h2>Contact us</h2>
+					<br>
+					<form action="mailto:artfiesta.jgm@gmail.com" method="post" enctype="text/plain">
+						<input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+						<textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+						<button type="submit" class="btn btn-big contact-btn" value="Send">
+							<i class="fa fa-envelope"></i>
+							Send
+						</button>
+					</form>
+				</div>
+				
+				<div class="footer-bottom">
+					&copy; artfiesta.com | Designed by Yash Patwari
+				</div>
+			</div>
+		</div>
+
+		<script>
+
+			var x = document.getElementById("beforeLogin");
+			var y = document.getElementById("afterLogin");
+
+			function login(){
+				window.open("login.html");
+			}
+
+			function loggedInView() {
+
+				var userName = localStorage.getItem("User Id");
+				var logout = '<span style="margin-top:20px;">Welcome...</span><button type="button" class="loginBtn" onclick="onClicklogout()">Log Out</button>';
+
+				x.style.display = "none";
+				y.style.display = "block";
+
+				document.getElementById("afterLogin").innerHTML = logout + userName; 
+			}
+
+			function onClicklogout() {
+				x.style.display = "block";
+				y.style.display = "none";
+			}
+
+			function gotoGallery() {
+				$('html,body').animate({
+					scrollTop: $(".gallery").offset().top},
+					'slow');
+			}
+
+			function gotoContact() {
+				$('html,body').animate({
+					scrollTop: $(".footer").offset().top},
+					'slow');
+			}
+
+			function gotoAbout() {
+				$('html,body').animate({
+					scrollTop: $(".intro").offset().top},
+					'slow');
+			}
+
+			function gotoHome() {
+				$('html,body').animate({
+					scrollTop: $(".row").offset().top},
+					'slow');
+			}
+
+		</script>
+
+	</body>
+
+</html>
